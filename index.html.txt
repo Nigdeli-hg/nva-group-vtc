@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>NVA Group VTC</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+padding:30px;
+text-align:center;
+}
+
+nav{
+background:#1f2937;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+nav a:hover{
+color:#22c55e;
+}
+
+section{
+padding:40px;
+display:none;
+}
+
+.active{
+display:block;
+}
+
+.card{
+background:#1f2937;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+}
+
+.gallery img{
+width:90%;
+max-width:900px;
+margin:20px;
+border-radius:10px;
+}
+
+a{
+color:#38bdf8;
+}
+
+</style>
+
+<script>
+function sayfaAc(id){
+let sayfalar=document.querySelectorAll("section");
+sayfalar.forEach(s=>s.classList.remove("active"));
+document.getElementById(id).classList.add("active");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>NVA Group</h1>
+<p>ETS2 üzerine kurulu VTC</p>
+</header>
+
+<nav>
+<a onclick="sayfaAc('konvoy')">Konvoylar</a>
+<a onclick="sayfaAc('partner')">Partnerler</a>
+<a onclick="sayfaAc('yetkili')">Yetkililer</a>
+<a onclick="sayfaAc('hakkimizda')">Hakkımızda</a>
+<a onclick="sayfaAc('linkler')">Linkler</a>
+<a onclick="sayfaAc('galeri')">Galeri</a>
+</nav>
+
+<section id="konvoy" class="active">
+<h2>Konvoylar</h2>
+
+<div class="card"><a href="https://truckersmp.com/events/32597-nva-group%7C-monthly-convoy#4" target="_blank">Monthly Convoy #4</a></div>
+<div class="card"><a href="https://truckersmp.com/events/31567-nva-group%7C-g%C3%B6rkem-and-furkan-birthday-convoy!" target="_blank">Birthday Convoy</a></div>
+<div class="card"><a href="https://truckersmp.com/events/34038-nva-group-x-novalines%7C-partners-convoy" target="_blank">Partners Convoy</a></div>
+<div class="card"><a href="https://truckersmp.com/events/32931-nva-group%7C-monthly-convoy#5" target="_blank">Monthly Convoy #5</a></div>
+<div class="card"><a href="https://truckersmp.com/events/32991-nva-group%7C1nd-year-convoy" target="_blank">1st Year Convoy</a></div>
+<div class="card"><a href="https://truckersmp.com/events/33221-nva-group%7C-monthly-convoy#7" target="_blank">Monthly Convoy #7</a></div>
+<div class="card"><a href="https://truckersmp.com/events/33973-nva-group%7C-monthly-convoy#8" target="_blank">Monthly Convoy #8</a></div>
+
+</section>
+
+<section id="partner">
+<h2>Partnerler</h2>
+
+<div class="card"><a href="https://truckersmp.com/vtc/74669" target="_blank">Partner VTC</a></div>
+<div class="card"><a href="https://truckersmp.com/vtc/72436" target="_blank">Partner VTC</a></div>
+<div class="card"><a href="https://truckersmp.com/vtc/81301" target="_blank">Partner VTC</a></div>
+<div class="card"><a href="https://truckersmp.com/vtc/82378" target="_blank">Partner VTC</a></div>
+
+</section>
+
+<section id="yetkili">
+<h2>Yetkililer</h2>
+
+<div class="card">Owner: Görkem</div>
+<div class="card">Owner: Musa</div>
+<div class="card">Owner: Caner</div>
+<div class="card">Founder: Berat</div>
+<div class="card">Founder: Furkan</div>
+<div class="card">CEO: Berat</div>
+<div class="card">General Manager: Enes</div>
+<div class="card">Convoy Manager: Arda</div>
+<div class="card">Event Manager: Mahmut</div>
+<div class="card">Event Team: Ömer & Ahmet</div>
+
+</section>
+
+<section id="hakkimizda">
+<h2>Hakkımızda</h2>
+<p>NVA Group ETS2 üzerine kurulmuş bir VTC grubudur. Düzenli konvoylar ve etkinlikler düzenleyen aktif bir topluluktur.</p>
+</section>
+
+<section id="linkler">
+<h2>Linkler</h2>
+
+<div class="card">
+<a href="https://truckersmp.com/vtc/61498" target="_blank">VTC Sayfamız</a>
+</div>
+
+<div class="card">
+<a href="https://discord.gg/C7EmA7UA" target="_blank">Discord Sunucumuz</a>
+</div>
+
+</section>
+
+<section id="galeri">
+<h2>NVA Group Galeri</h2>
+
+<div class="gallery">
+<img src="foto1.png">
+<img src="foto2.png">
+</div>
+
+</section>
+
+</body>
+</html>
